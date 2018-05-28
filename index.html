@@ -13,10 +13,12 @@
     <title>Navbar Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="navbar.css" rel="stylesheet">
+    <link href="./css/navbar.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
@@ -33,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    </button>
+
                     <a class="navbar-brand" href="#">Project name</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
@@ -54,91 +56,66 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-                        <li><a href="../navbar-static-top/">Static top</a></li>
-                        <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-                    </ul>
+                    
                 </div>
                 <!--/.nav-collapse -->
             </div>
             <!--/.container-fluid -->
         </nav>
 
+
         <!-- Main component for a primary marketing message or call to action -->
         <div class="jumbotron">
             <h1>Navbar example</h1>
-            <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+            <br>
+            <div class="container">
+                <table class="table table-responsive ">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="quiz-image" style="padding-right:20px">
+                                    <!-- <b> -->
+                                        
+                                        <img src="./img/quiz.png">
+                                        
+                                    <!-- </b> -->
+                                </div>
+                                </td>
+                            <td>
+                                    <div class="question-text">
+                                        <p>This example of a question that this app will ask.
+                                        </p>
+                                    </div>
+                                    <div class="question_answers">
+                                        <form>
+                                            <p>
+                                            <input type="radio" name="answer" value="answer1" checked> answer1 <br>
+                                            <input type="radio" name="answer" value="answer2"> answer2 <br>
+                                            <input type="radio" name="answer" value="answer3"> answer3 <br>
+                                            <input type="radio" name="answer" value="answer4"> answer4 <br>
+                                            </p>
+                                        </form>
+                                    </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
             <p>
-                <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+                <button class="btn btn-lg btn-primary" id="submit_button" >Begin</button>
             </p>
         </div>
 
     </div>
-    <!-- /container -->
 
-    <section class='quiz'>
-        <div class="container">
-            <form method="POST" action="quizmark.asp">
-                <div>
-                    <table style="border:0" cellpadding="2">
-                        <tr>
-                            <td colspan="5" valign="top" style="text-align: center">
-                                <p style="text-align:center"><b><img style="border:0" src="./img/quiz.png"></b></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center" colspan="5">
-                                <hr>
 
-                            </td>
-                        </tr>
+    
+    <!--Advertising Section Below-->
+    <section>
 
-                        <tr>
-                            <td style="text-align: center">
-                                <font face="Arial" size="5"><b>9</b></td>
-                            <td style="text-align: center">
-                                <font face="Arial" size="5"><b>+</b></td>
-                            <td style="text-align: center">
-                                <font face="Arial" size="5"><b>11</b></td>
-                            <td style="text-align: center">
-                                <font face="Arial" size="5"><b> = </b></td>
-                            <td style="text-align: center"><input type="text" name="Q12" size="10" style="font-family: Arial; font-size: 18pt"></td>
-                            <input type="hidden" name="A12" value="9">
-                            <input type="hidden" name="B12" value="11">
-                        </tr>
-                        <tr>
-                            <td style="text-align: center" colspan="5">&nbsp;<br></td>
-                        </tr>
-
-                        <tr>
-                            <td style="text-align: center">
-                                <font face="Arial" size="5"><b>15</b></td>
-                            <td style="text-align: center">
-                                <font face="Arial" size="5"><b>+</b></td>
-                            <td style="text-align: center">
-                                <font face="Arial" size="5"><b>3</b></td>
-                            <td style="text-align: center">
-                                <font face="Arial" size="5"><b> = </b></td>
-                            <td style="text-align: center"><input type="text" name="Q14" size="10" style="font-family: Arial; font-size: 18pt"></td>
-                            <input type="hidden" name="A14" value="15">
-                            <input type="hidden" name="B14" value="3">
-                        </tr>
-                        <tr>
-                            <td style="text-align: center" colspan="5">&nbsp;<br></td>
-                        </tr>
-
-                    </table>
-                    <button type="button" class="btn btn-primary">Submit</button>
-                </div>
-                <input type="hidden" name="Quiztype" value="add">
-                <input type="hidden" name="Operator" value="+">
-                <input type="hidden" name="QuizLen" value="35">
-                <input type="hidden" name="QuizStart" value="75652.14">
-            </form>
-
-        </div>
     </section>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
