@@ -1,14 +1,11 @@
-console.log('---');
-
-//import test from './data/data.json';
-
-//var json_data = json.stringify(test);
-
-
-//console.log(json_data);
-
-
-
-$.getJSON('./data/data.json', function(data) {
+/* $.getJSON('./data/data.json', function(data) {
     console.log(data);
+}); */
+
+let testData = $.getJSON('./data/data.json');
+
+console.log(JSON.stringify(testData));
+
+$(testData.test).each(function(index, value) {
+    console.log(value.name);
 });
