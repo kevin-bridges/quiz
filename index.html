@@ -82,13 +82,15 @@
                                     <p>This example of a question that this app will ask.
                                     </p>
                                 </div>
-                                <div class="question_answers">
+                                <div id="question-container">
                                     <form>
                                         <p>
-                                            <input type="radio" name="answer" value="answer1" checked> answer1 <br>
-                                            <input type="radio" name="answer" value="answer2"> answer2 <br>
-                                            <input type="radio" name="answer" value="answer3"> answer3 <br>
-                                            <input type="radio" name="answer" value="answer4"> answer4 <br>
+                                            <div id="quiz-answers">
+                                                <input type="radio" name="answer" value="answer1" checked> answer1 <br>
+                                                <input type="radio" name="answer" value="answer2"> answer2 <br>
+                                                <input type="radio" name="answer" value="answer3"> answer3 <br>
+                                                <input type="radio" name="answer" value="answer4"> answer4 <br>
+                                            </div>
                                         </p>
                                     </form>
                                 </div>
@@ -99,7 +101,7 @@
             </div>
             <br>
             <p>
-                <button class="btn btn-lg btn-primary" id="submit_button">Begin</button>
+                <button class="btn btn-lg btn-primary" id="submit-button">Begin</button>
             </p>
         </div>
 
