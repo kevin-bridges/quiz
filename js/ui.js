@@ -4,9 +4,13 @@ const UICtrl = (function() {
         questionText: '.question-text',
         questionContainer: '#question-container',
         quizAnswers: '#quiz-answers',
-        submitButton: '#submit-button'
+        submitButton: '#submit-button',
+        possibleAnswers: '.question-answers'
     }
 });
+
+// Public Methods
+
 
 /*      [WORK THROUGH THIS TO CREATE THE UI - sample below taken from TRACALORIE]
 // Public methods

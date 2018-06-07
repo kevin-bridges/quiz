@@ -1,11 +1,25 @@
-/* $.getJSON('./data/data.json', function(data) {
-    console.log(data);
-}); */
 
-let testData = $.getJSON('./data/data.json');
+let testData = './data/data.json';
 
-console.log(JSON.stringify(testData));
+// let testObject = $.getJSON(testData, function (json) {
+//     console.log(json.test_questions); // this will show the info it in firebug console
+// });
 
-$(testData.test).each(function(index, value) {
-    console.log(value.name);
+
+let firstPromise = $.getJSON(testData);
+
+$.when(firstPromise).done(function(firstPromise){
+    console.log(firstPromise.test_questions[0].question); // How many licks does it take to get to the tootsie roll center of the tootsie pop?
+    console.log(firstPromise.test_questions[0].answers[0].a1); // One hundred
+    console.log(firstPromise.test_questions[1].question); // True or False? Grizzly Adams had a beard.
+    console.log(firstPromise.test_questions[1].answers[0].a1); // True
+    
+    
 });
+
+
+
+
+
+
+
