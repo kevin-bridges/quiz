@@ -1,6 +1,7 @@
 const UICtrl = (function() {
     const UISelectors = {
         quizImage: '.quiz-image',
+        questionHeader: 'question-header',
         questionText: '.question-text',
         questionContainer: '#question-container',
         quizAnswers: '#quiz-answers',

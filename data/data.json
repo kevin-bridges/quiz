@@ -1,23 +1,66 @@
 {
-    "test_questions": [{
-            "id": 1,
-            "question": "How many licks does it take to get to the tootsie roll center of the tootsie pop?",
-            "answers": [{
-                "a1": "One Hundred",
-                "a2": "Three",
-                "a3": "Five Hundred",
-                "a4": "Two Hundred Fifteen"
-            }],
-            "correct_answer": "a2"
-        },
-        {
-            "id": 2,
-            "question": "True or False? Grizzly Adams had a beard.",
-            "answers": [{
-                "a1": "True",
-                "a2": "False"
-            }],
-            "correct_answer": "a1"
-        }
+    "test_questions": [
+        
+            {   
+                "id": 1,
+                "question": "How many licks does it take to get to the tootsie roll center of the tootsie pop?",
+                "answers": {
+                    "a1": {
+                        "val": "One Hundred",
+                        "res": "Incorrect"
+                    },
+                    "a2":{
+                        "val": "Three",
+                        "res": "Incorrect"
+                    },
+                    "a3": {
+                        "val": "Five Hundred",
+                        "res": "Incorrect"
+                    },
+                    "a4": {
+                        "val": "Two Hundred Fifteen",
+                        "res": "Correct"
+                    }
+                }  
+            },
+            
+            {   
+                "id": 2,
+                "question": "True or False? Grizzly Adams had a beard.",
+                "answers": {
+                    "a1": {
+                        "val": "True",
+                        "res": "Correct"
+                    },
+                    "a2": {
+                        "val": "False",
+                        "res": "Incorrect"
+                    }
+                }
+            },
+            
+            {
+                "id": 3,
+                "question": "What is the best part of waking up?",
+                "answers": {
+                    "a1": {
+                        "val": "Eye boogers",
+                        "res": "Incorrect"
+                    },
+                    "a2":{
+                        "val": "Cleaning snow off the car",
+                        "res":"Incorrect"
+                    },
+                    "a3":{
+                        "val": "Bourbon in your cup",
+                        "res":"Correct"
+                    },
+                    "a4":{
+                        "val": "The commute in to work",
+                        "res":"Incorrect"
+                    }
+                }
+            }
+              
     ]
 }
